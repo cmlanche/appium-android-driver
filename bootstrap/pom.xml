@@ -37,6 +37,15 @@
                 </configuration>
             </plugin>
             <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <!--jar输出目录-->
+                    <outputDirectory>./bin</outputDirectory>
+                    <!--输出的jar包名称-->
+                    <finalName>AndroidBootstrap</finalName>
+                </configuration>
+            </plugin>
+            <plugin>
                 <artifactId>maven-dependency-plugin</artifactId>
             </plugin>
         </plugins>
@@ -69,4 +78,10 @@
 
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>Boundless</id>
+            <url>http://repo.boundlessgeo.com/main/</url>
+        </repository>
+    </repositories>
 </project>
